@@ -1,0 +1,18 @@
+{
+  "name": "animate.styl",
+  "version": "1.0.0",
+  "description": "一个跨浏览器的 CSS 动画库。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kenny wang <398188662@qq.com> (http://JSLite.io)",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.1.0",
+    "gulp-watch": "^4.3.5",
+    "nib": "^1.1.0"
+  }
+}

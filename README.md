@@ -33,8 +33,11 @@ $('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimat
 
 ```css 
 .bounceIn {
-  -vendor-animation-duration: 3s;   //定义动画完成一个周期所需要的时间
-  -vendor-animation-delay: 2s;      //属性定义动画何时开始。允许负值，-2s 使动画马上开始，但跳过 2 秒进入动画
-  -vendor-animation-iteration-count: infinite; //播放动画次数 infinite(无限循环)
+  //定义动画完成一个周期所需要的时间
+  -vendor-animation-duration: 3s;
+  //属性定义动画何时开始。允许负值，-2s 使动画马上开始，但跳过 2 秒进入动画
+  -vendor-animation-delay: 2s;
+  //播放动画次数 infinite(无限循环)
+  -vendor-animation-iteration-count: infinite; 
 }
 ```

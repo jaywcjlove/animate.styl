@@ -1,7 +1,4 @@
-// 供应商兼容添加
-// @import 'nib'
-
-animated-names ?= bounce flash pulse rubberBand shake shakeBasic swing tada wobble jello bounceIn bounceInDown bounceInLeft bounceInRight bounceInUp bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig flip flipInX flipInY flipOutX flipOutY lightSpeedIn lightSpeedOut rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight slideInDown slideInLeft slideInRight slideInUp slideOutDown slideOutLeft slideOutRight slideOutUp hinge rollIn rollOut zoomIn zoomInDown zoomInLeft zoomInRight zoomInUp zoomOut zoomOutDown zoomOutLeft zoomOutRight zoomOutUp 
+animated-names ?= bounce flash pulse rubberBand shake shakeBasic shakeSlow swing tada wobble jello bounceIn bounceInDown bounceInLeft bounceInRight bounceInUp bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig flip flipInX flipInY flipOutX flipOutY lightSpeedIn lightSpeedOut rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight slideInDown slideInLeft slideInRight slideInUp slideOutDown slideOutLeft slideOutRight slideOutUp hinge rollIn rollOut zoomIn zoomInDown zoomInLeft zoomInRight zoomInUp zoomOut zoomOutDown zoomOutLeft zoomOutRight zoomOutUp 
 
 // 动画方法定义
 animations()
@@ -78,9 +75,21 @@ animations()
         transform: translate3d(-10px,0,0)
     20%,40%,60%,80%
         transform: translate3d(10px,0,0)
-        
-        
+
+ 
 // http://demo.htmleaf.com/1501/201501061750/index.html#5
+@keyframes shakeSlow
+    0%
+        -webkit-transform:rotate(0deg)
+    20%
+        -webkit-transform:rotate(-2deg)
+    60%
+        -webkit-transform:rotate(0deg)
+    80%
+        -webkit-transform:rotate(2deg)
+    100%
+        -webkit-transform:rotate(0deg)
+
 @keyframes shakeBasic
     0% 
         -webkit-transform: translate(0px, 0px) rotate(0deg)

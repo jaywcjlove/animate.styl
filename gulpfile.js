@@ -2,7 +2,8 @@ var gulp = require('gulp');
 var watch = require('gulp-watch');
 var stylus = require('gulp-stylus');
 var rename = require("gulp-rename");
-var nib = require('nib');
+var autoprefixer = require('gulp-autoprefixer');
+    var browserslist = ['Chrome >= 20', 'Firefox >= 24', 'Opera >= 12', 'Safari >= 6'];
 
 // 侦听文件改变执行任务
 gulp.task('watch', function (cb) {
@@ -13,16 +14,22 @@ gulp.task('watch', function (cb) {
 gulp.task('stylus', function () {
     gulp.src('./animate.styl')
         .pipe(stylus({
-            compress:true,
-            use: nib()
+            compress:true
+        }))
+        .pipe(autoprefixer({
+            browsers: browserslist,
+            cascade: false
         }))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist/'));
 
     gulp.src('./animate.styl')
         .pipe(stylus({
-            compress:false,
-            use: nib()
+            compress:false
+        }))
+        .pipe(autoprefixer({
+            browsers: browserslist,
+            cascade: false
         }))
         .pipe(gulp.dest('./dist/'));
 });

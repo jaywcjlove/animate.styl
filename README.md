@@ -31,6 +31,8 @@ $('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimat
 
 ##  更改动画持续时间
 
+- vendor 填写兼容前缀如`-moz-`、`-webkit`、`-o`、`-ms`
+
 ```css 
 .bounceIn {
   //定义动画完成一个周期所需要的时间
